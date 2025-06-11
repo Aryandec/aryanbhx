@@ -5,7 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .article {
   @apply flex flex-col gap-3 text-lg tracking-wide mb-20;
 }
