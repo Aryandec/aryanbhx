@@ -16,6 +16,8 @@ const NavItems = () => {
     { label: "Home", href: "/" },
     { label: "Projects", href: "/#projects" },
     { label: "Socials", href: "/socials" },
+    { label: "Blog", href: "/blog" },
+    
   ];
 
   return (
