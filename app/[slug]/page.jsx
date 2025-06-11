@@ -10,7 +10,7 @@ const Article = async ({ params }) => {
       <div className="flex justify-between font-poppins">
         <Link href="/blog" className="flex flex-row gap-1 place-items-center">
           <LuArrowLeft width={20} />
-          <p>back to home</p>
+          <p>Blog List</p>
         </Link>
         <p>{articleData.date.toString()}</p>
       </div>
