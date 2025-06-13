@@ -12,22 +12,22 @@ export default function SocialsPage() {
         <SocialCard
           icon={<FaGithub className="text-2xl" />}
           label="GitHub"
-          href="https://github.com/yourusername"
+          href="https://github.com/aryandec"
         />
         <SocialCard
           icon={<FaDiscord className="text-2xl" />}
           label="Discord"
-          href="https://discord.gg/yourinvite"
+          href="https://discord.gg/6w2EuXjFef"
         />
         <SocialCard
           icon={<FaTwitter className="text-2xl" />}
           label="Twitter"
-          href="https://twitter.com/yourusername"
+          href="https://twitter.com/aryanbhx"
         />
         <SocialCard
           icon={<FaInstagram className="text-2xl" />}
           label="Instagram"
-          href="https://instagram.com/yourusername"
+          href="https://instagram.com/aryanbh7"
         />
       </div>
     </main>
