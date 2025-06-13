@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <section id="projects">
-        <Projects />
-      </section>
+      <Projects />
     </main>
   );
 }

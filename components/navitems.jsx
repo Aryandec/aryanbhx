@@ -7,6 +7,7 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { FaBars } from "react-icons/fa";
 import { FaBookBookmark } from "react-icons/fa6";
+import AIChatButton from "./AIChatButton";
 
 const NavItems = () => {
   const pathname = usePathname();
@@ -17,8 +18,7 @@ const NavItems = () => {
     { label: "Projects", href: "/#projects" },
     { label: "Socials", href: "/socials" },
     { label: "Blog", href: "/blog" },
-    { label: "AryanOS", href: "/terminal"}
-    
+    { label: "AryanOS", href: "/terminal"},
   ];
 
   return (
