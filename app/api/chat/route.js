@@ -10,6 +10,8 @@ import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retr
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { HumanMessage, AIMessage } from "@langchain/core/messages";
+import "@/lib/cache"; 
+
 
 export async function POST(req) {
   try {
@@ -30,7 +32,7 @@ export async function POST(req) {
     const rephrasingModel = new ChatGoogleGenerativeAI({
       model: modelName,
       verbose: true,
-      cache: false,
+      cache: true,
     });
 
     const rephrasePrompt = ChatPromptTemplate.fromMessages([
@@ -59,6 +61,7 @@ export async function POST(req) {
     const streamingModel = new ChatGoogleGenerativeAI({
       model: modelName,
       streaming: true,
+      cache: true,
     });
 
     const combineDocsChain = await createStuffDocumentsChain({

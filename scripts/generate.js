@@ -44,6 +44,15 @@ async function generateEmbeddings() {
             .split("/app")[1]
             .split("/page.")[0] || "/";
 
+        const excludedPaths = [
+          "/terminal",
+          "/blog",
+          "/terminal",
+          "/",
+          "/[slug]",
+        ];
+        if (excludedPaths.includes(url)) return null;
+
         const pageContentTrimmed = doc.pageContent
           .replace(/^import.*$/gm, "")
           .replace(/^export.*$/gm, "") // remove exports
@@ -53,17 +62,22 @@ async function generateEmbeddings() {
           .replace(/function .*?\(.*?\) ?{.*?}/gs, "") // remove function declarations
           .replace(/\s{2,}/g, " ") // normalize whitespace
           .trim();
-          
+
         return {
           pageContent: pageContentTrimmed,
           metadata: { url },
         };
-      }),
+      })
+      .filter(Boolean),
   ];
 
   const splitter = RecursiveCharacterTextSplitter.fromLanguage("html");
 
-  const splitDocs = await splitter.splitDocuments(docs);
+  const validDocs = docs.filter(
+    (doc) =>
+      typeof doc.pageContent === "string" && doc.pageContent.trim() !== ""
+  );
+  const splitDocs = await splitter.splitDocuments(validDocs);
 
   await vectorStore.addDocuments(splitDocs);
 }

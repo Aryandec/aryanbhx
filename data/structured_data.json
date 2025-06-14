@@ -5,18 +5,37 @@
   },
   {
     "source": "projects",
-    "content": "Project: Bookmark Manager\nDescription: A simple and efficient bookmark management tool."
+    "content": {
+      "title": "Bookmark Manager",
+      "description": "A web application to save, organize, and share bookmarks with a clean UI. Built with Next.js, Tailwind CSS, and Supabase."
+    }
   },
   {
     "source": "projects",
-    "content": "Project: Aryanbhx Portfolio\nDescription: My personal portfolio showcasing my projects and skills."
+    "content": "This portfolio website built with Next.js and Tailwind CSS highlights my projects, skills, and experiences. It features a clean design and responsive layout."
   },
   {
     "source": "blog",
-    "content": "Blog Title: How I made $1 million\nSummary: I did not make any money."
+    "content": "How i made $1 million. \n I did not make any money. You can see all the blogs in /blogs."
   },
   {
-    "source": "conntact",
-    "content": "you can contact me via my email aryanbh480@gmail.com or via my  social links"
+    "source": "contact",
+    "content": "You can contact me via my email aryanbh480@gmail.com or via my social links."
+  },
+  {
+    "source": "aryanos",
+    "content": "AryanOS \n It is a terminal in the portfolio website which you can use — just go to /terminal."
+  },
+  {
+    "source": "skills-webdev",
+    "content": "HTML, CSS, React, Next.js"
+  },
+  {
+    "source": "skills-databases",
+    "content": "Postgres, Supabase"
+  },
+  {
+    "source": "skills-programming",
+    "content": "JavaScript, Python"
   }
 ]
