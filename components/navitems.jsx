@@ -18,7 +18,6 @@ const NavItems = () => {
     { label: "Projects", href: "/#projects" },
     { label: "Socials", href: "/socials" },
     { label: "Blog", href: "/blog" },
-    { label: "AryanOS", href: "/terminal"},
   ];
 
   return (
