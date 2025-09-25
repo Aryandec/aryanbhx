@@ -8,7 +8,6 @@ const Navbar = () => {
     <nav className="w-full py-4 bg-white text-black">
       <div className="flex justify-center items-center gap-5 ">
         <NavItems />
-        <AIChatButton />
       </div>
     </nav>
   );
